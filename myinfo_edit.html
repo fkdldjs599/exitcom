@@ -1,0 +1,255 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIT COMPANY</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업2 -->
+    <div class="pop pop2">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+                <div class="p_blue"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </section>
+    </div>
+
+
+<div class="inner1200">
+    <header class="left_menu">
+        <h1 class="logo_area">
+            <a href="index.html" class="grid">
+                <img src="img/logo.png" alt="ExiT COMPANY">
+            </a>
+        </h1>
+
+        <nav class="nav">
+            <a href="line_manage.html" class="nav_a">
+                <span class="vt_mid menu">회선 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_history.html" class="nav_a">
+                <span class="vt_mid menu">통화 내역</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="db_manage.html" class="nav_a">
+                <span class="vt_mid menu">DB 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="record_manage.html" class="nav_a">
+                <span class="vt_mid menu">녹취파일 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_setting.html" class="nav_a">
+                <span class="vt_mid menu">통화 설정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="notice_list.html" class="nav_a">
+                <span class="vt_mid menu">공지사항</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="myinfo_edit.html" class="nav_a on">
+                <span class="vt_mid menu">내 정보 수정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+        </nav>
+
+        <div class="white_box">
+            <div class="wb_top">남은 잔여금액</div>
+
+            <div class="wb_price"><span class="suite price">999,999,999</span> 원</div>
+
+            <div class="wb_end">
+                <div class="end_left vt_mid">종료일</div>
+                <div class="end_right vt_mid">
+                    <span class="suite price">~ 24.04.30</span>
+                </div>
+            </div>
+
+            <div class="wb_btnarea">
+                <button type="button" class="inq_btn">문의하기</button>
+            </div>
+        </div>
+
+        <div class="fixed">
+            <button type="button" class="logout_btn">로그아웃</button>
+
+            <div class="copy">
+                <img src="img/icon_copy.png" alt="Copyright" class="vt_mid">
+                <span class="vt_mid copytxt">EXITCOMPANY. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="right_ct">
+
+        <h1 class="h1">내 정보 수정</h1>
+    
+    
+    
+        <article id="myinfo_edit" class="contents">
+    
+            <form name="myinfo">
+    
+                <div class="my_block">
+    
+                    <h2 class="my_h2">내 정보</h2>
+    
+    
+    
+                    <div class="my_con">
+    
+                        <div class="line_wrap">
+    
+                            <div class="my_line">
+    
+                                <label for="user_id" class="my_lab">아이디</label>
+    
+                                <input type="text" name="user_id" id="user_id" readonly value="test1234" class="input readonly">
+    
+                            </div>
+    
+                            <div class="my_line">
+    
+                                <label for="user_name" class="my_lab">이름(회사명)</label>
+    
+                                <input type="text" name="user_name" id="user_name" value="홍길동" class="input" placeholder="이름(회사명)을 입력해주세요.">
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="btn_area">
+    
+                            <button type="button" class="btn_common save_myinfo">내 정보 저장</button>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="my_block">
+    
+                    <h2 class="my_h2">비밀번호 변경</h2>
+    
+    
+    
+                    <div class="my_con">
+    
+                        <div class="line_wrap">
+    
+                            <div class="my_line">
+    
+                                <label for="now_pw" class="my_lab">현재 비밀번호</label>
+    
+                                <input type="password" name="now_pw" id="now_pw" class="input" placeholder="현재 비밀번호를 입력해주세요.">
+    
+                            </div>
+    
+                            <div class="my_line">
+    
+                                <label for="new_pw" class="my_lab">새로운 비밀번호</label>
+    
+                                <input type="password" name="new_pw" id="new_pw" class="input" placeholder="새로운 비밀번호를 입력해주세요.">
+    
+                            </div>
+    
+                            <div class="my_line">
+    
+                                <label for="new_pw2" class="my_lab">새로운 비밀번호 확인</label>
+    
+                                <input type="password" name="new_pw2" id="new_pw2" class="input" placeholder="새로운 비밀번호를 다시 입력해주세요.">
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="btn_area">
+    
+                            <button type="button" class="btn_common change_pw">비밀번호 변경</button>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </form>
+    
+        </article>
+    
+    </section>
+
+</div>
+
+<footer class="footer">
+    <div class="inner1200">
+        <div class="f_left vt_mid">
+            <a href="index.html" class="f_logo">
+                <img src="img/f_logo.png" alt="EIXT COMPANY">
+            </a>
+        </div>
+        <div class="f_cen vt_mid">
+            <div class="mb10">
+                <div class="mr30">상호명 : 엑시트컴퍼니</div>
+                <div class="mr30">대표자명 : 전동민</div>
+                <div class="mr30">문의전화 : 1599-1599</div>
+                <div class="mr30">문의메일 : test@test.com</div>
+            </div>
+            <div class="mb10">
+                <div class="mr30">주소 : 인천광역시 연수구 연수동 555</div>
+            </div>
+        </div>
+        <div class="f_right vt_mid">
+            <a href="term1.html" class="term_a">이용약관</a>
+            <a href="term2.html" class="term_a">개인정보처리방침</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIT COMPANY</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업2 -->
+    <div class="pop pop2">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+                <div class="p_blue"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </section>
+    </div>
+
+
+<div class="inner1200">
+
+    <section class="wrapper">
+
+        <div class="inner520">
+    
+            <article id="join" class="form">
+    
+                <h1 class="j_h1">회원 가입</h1>
+    
+    
+    
+                <ul class="j_ul">
+    
+                    <li class="j_li vt_mid on">약관 동의</li>
+    
+                    <li class="j_li vt_mid">정보 입력</li>
+    
+                </ul>
+    
+    
+    
+                <div class="tab_wrap">
+    
+                    <div class="tab tab1 on">
+    
+                        <div class="ag_table">
+    
+                            <div class="all_ag">
+    
+                                <div class="ck_area vt_mid">
+    
+                                    <input type="checkbox" name="all_agree" id="all_agree" class="ckbox">
+    
+                                </div>
+    
+                                <label for="all_agree" class="lab vt_mid">전체동의</label>
+    
+                            </div>
+    
+                            <div class="term_wrap">
+    
+                                <div class="term">
+    
+                                    <div class="ck_area vt_mid">
+    
+                                        <input type="checkbox" name="term1" id="term1" class="ckbox">
+    
+                                    </div>
+    
+                                    <label for="term1" class="lab vt_mid">이용약관</label>
+    
+                                    <a href="term1.html" class="vt_mid">
+    
+                                        <img src="img/arrow_right_bk.png" alt="보기" class="arrow">
+    
+                                    </a>
+    
+                                </div>
+    
+                                <div class="term">
+    
+                                    <div class="ck_area vt_mid">
+    
+                                        <input type="checkbox" name="term2" id="term2" class="ckbox">
+    
+                                    </div>
+    
+                                    <label for="term2" class="lab vt_mid">개인정보처리방침</label>
+    
+                                    <a href="term2.html" class="vt_mid">
+    
+                                        <img src="img/arrow_right_bk.png" alt="보기" class="arrow">
+    
+                                    </a>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="btn_abs">
+    
+                            <button type="button" class="form_btn next" disabled>다음</button>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="tab tab2">
+    
+                        <form name="join_form">
+    
+                            <div class="i_block_wrap">
+    
+                                <div class="i_block">
+    
+                                    <label for="user_id" class="vt_mid lab">아이디</label>
+    
+                                    <div class="vt_mid i_wrap">
+    
+                                        <input type="text" name="user_id" id="user_id" class="input wid180" placeholder="아이디를 입력해주세요.">
+    
+    
+    
+                                        <button type="button" class="f_btn check_id">중복확인</button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="i_block">
+    
+                                    <label for="user_pw" class="vt_mid lab">비밀번호</label>
+    
+                                    <div class="vt_mid i_wrap">
+    
+                                        <input type="password" name="user_pw" id="user_pw" class="input" placeholder="비밀번호를 입력해주세요.">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="i_block">
+    
+                                    <label for="user_pw2" class="vt_mid lab">비밀번호확인</label>
+    
+                                    <div class="vt_mid i_wrap">
+    
+                                        <input type="password" name="user_pw2" id="user_pw2" class="input" placeholder="비밀번호를 다시 입력해주세요.">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="i_block">
+    
+                                    <label for="company" class="vt_mid lab">이름(회사명)</label>
+    
+                                    <div class="vt_mid i_wrap">
+    
+                                        <input type="text" name="company" id="company" class="input" placeholder="이름(회사명)을 입력해주세요.">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="i_block">
+    
+                                    <label for="phone" class="vt_mid lab">전화번호</label>
+    
+                                    <div class="vt_mid i_wrap">
+    
+                                        <input type="number" name="phone" id="phone" class="input" placeholder="전화번호를 입력해주세요.(-없이)">
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="btn_abs">
+    
+                                <button type="button" class="form_btn join_btn">회원가입</button>
+    
+                            </div>
+    
+                        </form>
+    
+                    </div>
+    
+                </div>
+    
+            </article>
+    
+        </div>
+    
+    </section>
+    
+</div>
+
+<footer class="footer">
+    <div class="inner1200">
+        <div class="f_left vt_mid">
+            <a href="index.html" class="f_logo">
+                <img src="img/f_logo.png" alt="EIXT COMPANY">
+            </a>
+        </div>
+        <div class="f_cen vt_mid">
+            <div class="mb10">
+                <div class="mr30">상호명 : 엑시트컴퍼니</div>
+                <div class="mr30">대표자명 : 전동민</div>
+                <div class="mr30">문의전화 : 1599-1599</div>
+                <div class="mr30">문의메일 : test@test.com</div>
+            </div>
+            <div class="mb10">
+                <div class="mr30">주소 : 인천광역시 연수구 연수동 555</div>
+            </div>
+        </div>
+        <div class="f_right vt_mid">
+            <a href="term1.html" class="term_a">이용약관</a>
+            <a href="term2.html" class="term_a">개인정보처리방침</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

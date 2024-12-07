@@ -1,0 +1,709 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIT COMPANY</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!--녹취파일 수정일때-->
+
+    <div class="pop rc_pop edit">
+
+        <div class="black_bg"></div>
+
+
+
+        <section class="white_bg">
+
+            <div class="top_area">
+
+                <h1 class="i_h1 vt_mid">녹취 수정</h1>
+
+                <button type="button" class="close_btn">
+
+                    <img src="img/close_btn.png" alt="닫기">
+
+                </button>
+
+            </div>
+
+
+
+            <form>
+
+                <div class="txt_area">
+
+                    <div class="rc_wrap">
+
+                        <div class="rc_block">
+
+                            <label for="project" class="r_lab vt_mid">프로젝트</label>
+
+                            <div class="right vt_mid">
+
+                                <select name="project" id="project" class="select">
+
+                                    <option value="default">프로젝트 선택</option>
+
+                                    <option selected>프로젝트1</option>
+
+                                    <option>프로젝트2</option>
+
+                                    <option>프로젝트3</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rc_block">
+
+                            <label for="project" class="r_lab vt_mid">녹취파일 선택</label>
+
+                            <div class="right vt_mid">
+
+                                <input type="file" name="upload_file2" id="upload_file2" class="file">
+
+                                <input type="text" name="filename2" id="filename2" class="input" readonly value="test1234.wav">
+
+                                <label for="upload_file2" class="f_lab vt_mid">선택</label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="p_btn_area">
+
+                    <button type="button" class="p_btn rc_edit">수정</button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <!--녹취파일 신규 업로드일때-->
+
+    <div class="pop rc_pop new">
+
+        <div class="black_bg"></div>
+
+
+
+        <section class="white_bg">
+
+            <div class="top_area">
+
+                <h1 class="i_h1 vt_mid">녹취 업로드</h1>
+
+                <button type="button" class="close_btn">
+
+                    <img src="img/close_btn.png" alt="닫기">
+
+                </button>
+
+            </div>
+
+
+
+            <form>
+
+                <div class="txt_area">
+
+                    <div class="rc_wrap">
+
+                        <div class="rc_block">
+
+                            <label for="project" class="r_lab vt_mid">프로젝트</label>
+
+                            <div class="right vt_mid">
+
+                                <select name="project" id="project" class="select">
+
+                                    <option value="default">프로젝트 선택</option>
+
+                                    <option>프로젝트1</option>
+
+                                    <option>프로젝트2</option>
+
+                                    <option>프로젝트3</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rc_block">
+
+                            <label for="project" class="r_lab vt_mid">녹취파일 선택</label>
+
+                            <div class="right vt_mid">
+
+                                <input type="file" name="upload_file" id="upload_file" class="file">
+
+                                <input type="text" name="filename" id="filename" class="input" readonly>
+
+                                <label for="upload_file" class="f_lab vt_mid">선택</label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="p_btn_area">
+
+                    <button type="button" class="p_btn rc_upload">업로드</button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- 팝업2 -->
+    <div class="pop pop2">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+                <div class="p_blue"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </section>
+    </div>
+
+
+<div class="inner1200">
+    <header class="left_menu">
+        <h1 class="logo_area">
+            <a href="index.html" class="grid">
+                <img src="img/logo.png" alt="ExiT COMPANY">
+            </a>
+        </h1>
+
+        <nav class="nav">
+            <a href="line_manage.html" class="nav_a">
+                <span class="vt_mid menu">회선 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_history.html" class="nav_a">
+                <span class="vt_mid menu">통화 내역</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="db_manage.html" class="nav_a">
+                <span class="vt_mid menu">DB 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="record_manage.html" class="nav_a on">
+                <span class="vt_mid menu">녹취파일 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_setting.html" class="nav_a">
+                <span class="vt_mid menu">통화 설정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="notice_list.html" class="nav_a">
+                <span class="vt_mid menu">공지사항</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="myinfo_edit.html" class="nav_a">
+                <span class="vt_mid menu">내 정보 수정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+        </nav>
+
+        <div class="white_box">
+            <div class="wb_top">남은 잔여금액</div>
+
+            <div class="wb_price"><span class="suite price">999,999,999</span> 원</div>
+
+            <div class="wb_end">
+                <div class="end_left vt_mid">종료일</div>
+                <div class="end_right vt_mid">
+                    <span class="suite price">~ 24.04.30</span>
+                </div>
+            </div>
+
+            <div class="wb_btnarea">
+                <button type="button" class="inq_btn">문의하기</button>
+            </div>
+        </div>
+
+        <div class="fixed">
+            <button type="button" class="logout_btn">로그아웃</button>
+
+            <div class="copy">
+                <img src="img/icon_copy.png" alt="Copyright" class="vt_mid">
+                <span class="vt_mid copytxt">EXITCOMPANY. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="right_ct">
+
+        <h1 class="h1">녹취파일 관리</h1>
+    
+    
+    
+        <div id="add_project" class="black_form">
+    
+            <form>
+    
+                <div class="bf_left vt_mid">
+    
+                    <div class="bf_wrap vt_mid">
+    
+                        <label for="pro_name" class="bf_lab">프로젝트 이름</label>
+    
+                        <input type="text" name="pro_name" id="pro_name" class="input" placeholder="생성할 프로젝트 이름을 입력해주세요.">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bf_right vt_mid">
+    
+                    <button type="button" class="blue_btn pro_add">생성</button>
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    
+    
+        <article id="record_manage" class="contents">
+    
+            <div class="top_area">
+    
+                <div class="t_left vt_mid">
+    
+                    <div class="all">총 <span class="suite">999,999,999</span> 개</div>
+    
+                </div>
+    
+                <div class="t_right vt_mid">
+    
+                    <button type="button" class="black_btn upload">녹취 업로드</button>
+    
+                    <button type="button" class="black_btn delete">녹취 삭제</button>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <table class="rc_table">
+    
+                <tr>
+    
+                    <th class="th th1">
+    
+                        <input type="checkbox" name="all_ck" id="all_ck" class="ckbox">
+    
+                    </th>
+    
+                    <th class="th th2">no</th>
+    
+                    <th class="th th3">프로젝트명</th>
+    
+                    <th class="th th4">녹취파일</th>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td class="td td1">
+    
+                        <input type="checkbox" name="record1" id="record1" class="ckbox line">
+    
+                    </td>
+    
+                    <td class="td td2">999999999</td>
+    
+                    <td class="td td3">프로젝트001</td>
+    
+                    <td class="td td4">
+    
+                        <input type="text" name="record_name1" id="record_name1" class="namebox" value="test1234.wav" readonly>
+    
+    
+    
+                        <button type="button" class="rc_btn edit">수정</button>
+    
+                        <button type="button" class="rc_btn del">삭제</button>
+    
+                    </td>
+    
+                </tr>
+    
+            </table>
+    
+    
+    
+            <div class="top_area">
+    
+                <div class="t_left vt_mid"></div>
+    
+                <div class="t_right vt_mid">
+    
+                    <button type="button" class="black_btn upload">녹취 업로드</button>
+    
+                    <button type="button" class="black_btn delete">녹취 삭제</button>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="pagination">
+    
+                <button type="button" class="page_btn prev">
+    
+                    <img src="img/btn_prev.png" alt="이전">
+    
+                </button>
+    
+                <div class="page_wrap vt_mid">
+    
+                    <a href="" class="page_a on">1</a>
+    
+                    <a href="" class="page_a">2</a>
+    
+                    <a href="" class="page_a">3</a>
+    
+                </div>
+    
+                <button type="button" class="page_btn next">
+    
+                    <img src="img/btn_next.png" alt="다음">
+    
+                </button>
+    
+            </div>
+    
+        </article>
+    
+    </section>
+
+</div>
+
+<footer class="footer">
+    <div class="inner1200">
+        <div class="f_left vt_mid">
+            <a href="index.html" class="f_logo">
+                <img src="img/f_logo.png" alt="EIXT COMPANY">
+            </a>
+        </div>
+        <div class="f_cen vt_mid">
+            <div class="mb10">
+                <div class="mr30">상호명 : 엑시트컴퍼니</div>
+                <div class="mr30">대표자명 : 전동민</div>
+                <div class="mr30">문의전화 : 1599-1599</div>
+                <div class="mr30">문의메일 : test@test.com</div>
+            </div>
+            <div class="mb10">
+                <div class="mr30">주소 : 인천광역시 연수구 연수동 555</div>
+            </div>
+        </div>
+        <div class="f_right vt_mid">
+            <a href="term1.html" class="term_a">이용약관</a>
+            <a href="term2.html" class="term_a">개인정보처리방침</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

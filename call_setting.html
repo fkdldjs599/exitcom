@@ -1,0 +1,423 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIT COMPANY</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업2 -->
+    <div class="pop pop2">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btns btn1">취소</button>
+                <button type="button" class="p_btns btn2"></button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 팝업1 -->
+    <div class="pop pop1">
+        <div class="black_bg"></div>
+    
+        <section class="white_bg">
+            <div class="top_area">
+                <button type="button" class="close_btn">
+                    <img src="img/close_btn.png" alt="닫기">
+                </button>
+            </div>
+            <div class="txt_area">
+                <h1 class="p_h1"></h1>
+                <div class="p_sub"></div>
+                <div class="p_blue"></div>
+            </div>
+            <div class="p_btn_area">
+                <button type="button" class="p_btn">확인</button>
+            </div>
+        </section>
+    </div>
+
+
+<div class="inner1200">
+    <header class="left_menu">
+        <h1 class="logo_area">
+            <a href="index.html" class="grid">
+                <img src="img/logo.png" alt="ExiT COMPANY">
+            </a>
+        </h1>
+
+        <nav class="nav">
+            <a href="line_manage.html" class="nav_a">
+                <span class="vt_mid menu">회선 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_history.html" class="nav_a">
+                <span class="vt_mid menu">통화 내역</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="db_manage.html" class="nav_a">
+                <span class="vt_mid menu">DB 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="record_manage.html" class="nav_a">
+                <span class="vt_mid menu">녹취파일 관리</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="call_setting.html" class="nav_a on">
+                <span class="vt_mid menu">통화 설정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="notice_list.html" class="nav_a">
+                <span class="vt_mid menu">공지사항</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+            <a href="myinfo_edit.html" class="nav_a">
+                <span class="vt_mid menu">내 정보 수정</span>
+                <img src="img/arrow_right.png" class="vt_mid arrow">
+            </a>
+        </nav>
+
+        <div class="white_box">
+            <div class="wb_top">남은 잔여금액</div>
+
+            <div class="wb_price"><span class="suite price">999,999,999</span> 원</div>
+
+            <div class="wb_end">
+                <div class="end_left vt_mid">종료일</div>
+                <div class="end_right vt_mid">
+                    <span class="suite price">~ 24.04.30</span>
+                </div>
+            </div>
+
+            <div class="wb_btnarea">
+                <button type="button" class="inq_btn">문의하기</button>
+            </div>
+        </div>
+
+        <div class="fixed">
+            <button type="button" class="logout_btn">로그아웃</button>
+
+            <div class="copy">
+                <img src="img/icon_copy.png" alt="Copyright" class="vt_mid">
+                <span class="vt_mid copytxt">EXITCOMPANY. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="right_ct">
+
+        <h1 class="h1">통화 설정</h1>
+    
+    
+    
+        <article id="call_setting" class="contents">
+    
+            <form name="call_setting">
+    
+                <div class="set_wrap">
+    
+                    <!--
+    
+                        적용일때 = set_btn에 addClass('apply')
+    
+                        수정일때 = set_btn에 addClass('edit')
+    
+                    -->
+    
+    
+    
+                    <div class="set_block">
+    
+                        <h2 class="set_h2">(1) 휴대폰 앱 오토콜</h2>
+    
+                        <div class="line_wrap">
+    
+                            <div class="set_line">
+    
+                                <label for="auto_time" class="set_lab vt_top pt10">전화 무응답 자동 끊기(초)</label>
+    
+                                <div class="input_wrap vt_top">
+    
+                                    <input type="number" name="auto_time" id="auto_time" class="input auto_time" placeholder="시간을 입력해주세요.">
+    
+    
+    
+                                    <button type="button" class="set_btn apply">적용</button>
+    
+    
+    
+                                    <div class="ck_area">
+    
+                                        <input type="checkbox" name="absence" id="absence" class="ckbox" checked>
+    
+                                        <label for="absence" class="i_lab vt_mid">무응답 끊기 초 경과 시 부재 처리함</label>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="set_block">
+    
+                        <h2 class="set_h2">(2) 휴대폰 앱 상담결과 버튼 문구</h2>
+    
+                        <div class="line_wrap">
+    
+                            <div class="set_line">
+    
+                                <label for="text1" class="set_lab vt_mid">1번 문구</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid">
+    
+                                        <input type="checkbox" name="perfor1" id="perfor1" class="ckbox" checked>
+    
+                                        <label for="perfor1" class="i_lab vt_mid">실적처리</label>
+    
+                                    </div>
+    
+    
+    
+                                    <input type="text" name="text1" id="text1" class="input" value="접수">
+    
+    
+    
+                                    <button type="button" class="set_btn apply">적용</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="set_line">
+    
+                                <label for="text2" class="set_lab vt_mid">2번 문구</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid">
+    
+                                        <input type="checkbox" name="perfor2" id="perfor2" class="ckbox" checked>
+    
+                                        <label for="perfor2" class="i_lab vt_mid">실적처리</label>
+    
+                                    </div>
+    
+    
+    
+                                    <input type="text" name="text2" id="text2" class="input" value="예약">
+    
+    
+    
+                                    <button type="button" class="set_btn apply">적용</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="set_line">
+    
+                                <label for="text3" class="set_lab vt_mid">3번 문구</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid">
+    
+                                        <input type="checkbox" name="perfor3" id="perfor3" class="ckbox">
+    
+                                        <label for="perfor3" class="i_lab vt_mid">실적처리</label>
+    
+                                    </div>
+    
+    
+    
+                                    <input type="text" name="text3" id="text3" class="input" value="무관심">
+    
+    
+    
+                                    <button type="button" class="set_btn apply">적용</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="set_line">
+    
+                                <label for="text4" class="set_lab vt_mid">4번 문구</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid">
+    
+                                        <input type="checkbox" name="perfor4" id="perfor4" class="ckbox">
+    
+                                        <label for="perfor4" class="i_lab vt_mid">실적처리</label>
+    
+                                    </div>
+    
+    
+    
+                                    <input type="text" name="text4" id="text4" class="input" value="거부">
+    
+    
+    
+                                    <button type="button" class="set_btn edit">수정</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="set_line">
+    
+                                <label for="text5" class="set_lab vt_mid">5번 문구 (고정)</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid"></div>
+    
+    
+    
+                                    <input type="text" name="text4" id="text4" class="input black" value="결번">
+    
+    
+    
+                                    <button type="button" class="set_btn edit">수정</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="set_line">
+    
+                                <label for="text6" class="set_lab vt_mid">6번 문구 (고정)</label>
+    
+                                <div class="input_wrap vt_mid">
+    
+                                    <div class="ck_wrap vt_mid"></div>
+    
+    
+    
+                                    <input type="text" name="text6" id="text6" class="input black" value="부재">
+    
+    
+    
+                                    <button type="button" class="set_btn edit">수정</button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="gray_bg">
+    
+                            <input type="checkbox" name="refusal" id="refusal" class="ckbox" checked>
+    
+                            <label for="refusal" class="label">'욕설, 거부' 문구 시 거부자료 등록</label>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="set_block">
+    
+                        <h2 class="set_h2">(3) 실적처리 체크된 항목 2차 분배</h2>
+    
+    
+    
+                        <div class="gray_bg">
+    
+                            <div class="left vt_mid">
+    
+                                <h3 class="set_h3">자동분배</h3>
+    
+                            </div>
+    
+                            <div class="right vt_mid">
+    
+                                <input type="checkbox" name="auto_division" id="auto_division" class="ckbox" checked>
+    
+                                <label for="auto_division" class="label">체크 시 분배</label>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </form>
+    
+        </article>
+    
+    </section>
+
+</div>
+
+<footer class="footer">
+    <div class="inner1200">
+        <div class="f_left vt_mid">
+            <a href="index.html" class="f_logo">
+                <img src="img/f_logo.png" alt="EIXT COMPANY">
+            </a>
+        </div>
+        <div class="f_cen vt_mid">
+            <div class="mb10">
+                <div class="mr30">상호명 : 엑시트컴퍼니</div>
+                <div class="mr30">대표자명 : 전동민</div>
+                <div class="mr30">문의전화 : 1599-1599</div>
+                <div class="mr30">문의메일 : test@test.com</div>
+            </div>
+            <div class="mb10">
+                <div class="mr30">주소 : 인천광역시 연수구 연수동 555</div>
+            </div>
+        </div>
+        <div class="f_right vt_mid">
+            <a href="term1.html" class="term_a">이용약관</a>
+            <a href="term2.html" class="term_a">개인정보처리방침</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
