@@ -1,4 +1,4 @@
-body,html {background: #F8F8F8; min-width: 1200px; font-family: 'Pretendard', sans-serif; color: #202020;}
+body,html {background: #F8F8F8; min-width: 1200px; color: #202020;}
 
 html.scrollLock {overflow: hidden;}
 
@@ -36,7 +36,7 @@ input[type="radio"].radio_bk:checked {background-image: url("../img/radio_bk_on.
 
 
 
-.suite {font-family: 'SUITE', sans-serif;}
+.suite {font-family: 'SUITE-Regular', sans-serif;}
 
 .inner1200 {width: 1200px; margin: 0 auto; font-size: 0; min-height: 972px;}
 
@@ -702,7 +702,7 @@ input[type="radio"].radio_bk:checked {background-image: url("../img/radio_bk_on.
 
 .calpop .calendar .th {font-size: 12px; font-weight: 500; padding: 16px 0; box-sizing: border-box; border-bottom: 1px solid #202020;}
 
-.calpop .calendar .td {font-size: 12px; font-weight: 300; font-family: 'SUITE', sans-serif; padding: 15px 0; box-sizing: border-box; position: relative; cursor: pointer;}
+.calpop .calendar .td {font-size: 12px; font-weight: 300; font-family: 'SUITE', sans-serif; padding: 15px 0; box-sizing: border-box; position: relative; cursor: pointer; text-align: center;}
 
 .calpop .calendar .td::after {content: ""; width: 20px; height: 20px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; background: transparent;}
 
