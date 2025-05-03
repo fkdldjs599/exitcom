@@ -322,10 +322,10 @@ input[type="radio"].radio_bk:checked {background-image: url("../img/radio_bk_on.
 
 .form .logo_area {margin-bottom: 30px;}
 
-.form .logo_area .logo_box {width: 220px; height: 220px; margin: 0 auto;}
+.form .logo_area .logo_box {margin: 0 auto; height: 220px;}
 
 .form .logo_area .logo_box .logo {width: 100%;}
-
+.form .logo_area .logo_box img {width: 100%;}
 
 
 .form .input_area {width: 100%; margin-bottom: 60px;}
@@ -342,7 +342,7 @@ input[type="radio"].radio_bk:checked {background-image: url("../img/radio_bk_on.
 
 
 
-.form .btn_area {margin-bottom: 20px;}
+.form .btn_area {margin-bottom: 10px;}
 
 .form_btn {font-size: 18px; font-weight: 600; color: #fff; width: 400px; height: 50px; background: #005288;}
 
@@ -350,7 +350,7 @@ input[type="radio"].radio_bk:checked {background-image: url("../img/radio_bk_on.
 
 
 
-.form .link_area .link_btn {margin-right: 20px; font-size: 18px; font-weight: 600; color: #005288; border: 1px solid #005288; box-sizing: border-box; width: calc((100% - 20px) / 2); height: 50px;}
+.form .link_area .link_btn {margin-right: 20px; font-size: 18px; font-weight: 600; color: #005288; border: 1px solid #005288; box-sizing: border-box; width: 100%; height: 50px;}
 
 .form .link_area .link_btn:last-child {margin-right: 0;}
 
